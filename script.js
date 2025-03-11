@@ -55,3 +55,21 @@ countOfPills = 5
 document.getElementById('count-of-tablets').innerText='💊'.repeat(countOfPills)
 document.getElementById('btn_love_wishes').style.display = 'inline-block'
  } )
+
+ let galleryImage = 1
+ document.getElementById("main-image").setAttribute('src',`img/gallery/${galleryImage}.jpg`)
+
+ document.getElementById('right-arrow').addEventListener("click",()=>{
+  galleryImage++
+  console.log(galleryImage)
+ if(galleryImage == 5) galleryImage = 1
+ document.getElementById("main-image").setAttribute("src",`img/gallery/${galleryImage}.jpg`)
+ })
+ document.getElementById("main-image").setAttribute('src',`img/gallery/${galleryImage}.jpg`)
+
+ document.getElementById('left-arrow').addEventListener("click",()=>{
+  galleryImage--
+  console.log(galleryImage)
+ if(galleryImage == 0) galleryImage = 1
+ document.getElementById("main-image").setAttribute("src",`img/gallery/${galleryImage}.jpg`)
+ })
