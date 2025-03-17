@@ -56,20 +56,22 @@ document.getElementById('count-of-tablets').innerText='💊'.repeat(countOfPills
 document.getElementById('btn_love_wishes').style.display = 'inline-block'
  } )
 
- let galleryImage = 1
- document.getElementById("main-image").setAttribute('src',`img/gallery/${galleryImage}.jpg`)
-
- document.getElementById('right-arrow').addEventListener("click",()=>{
-  galleryImage++
-  console.log(galleryImage)
- if(galleryImage == 5) galleryImage = 1
- document.getElementById("main-image").setAttribute("src",`img/gallery/${galleryImage}.jpg`)
- })
- document.getElementById("main-image").setAttribute('src',`img/gallery/${galleryImage}.jpg`)
-
- document.getElementById('left-arrow').addEventListener("click",()=>{
-  galleryImage--
-  console.log(galleryImage)
- if(galleryImage == 0) galleryImage = 1
- document.getElementById("main-image").setAttribute("src",`img/gallery/${galleryImage}.jpg`)
- })
+ let galleryImage = 1;
+ const mainImage = document.getElementById("main-image");
+ 
+ // Додаємо тінь до картинки
+ mainImage.style.boxShadow = "10px 10px 20px rgba(0, 0, 0, 0.5)";
+ 
+ mainImage.setAttribute('src', `img/gallery/${galleryImage}.jpg`);
+ 
+ document.getElementById('right-arrow').addEventListener('click', () => {
+     galleryImage++;
+     if (galleryImage > 4) galleryImage = 1; // Якщо у вас 4 зображення
+     mainImage.setAttribute('src', `img/gallery/${galleryImage}.jpg`);
+ });
+ 
+ document.getElementById('left-arrow').addEventListener('click', () => {
+     galleryImage--;
+     if (galleryImage < 1) galleryImage = 4; // Якщо у вас 4 зображення
+     mainImage.setAttribute('src', `img/gallery/${galleryImage}.jpg`);
+ });
