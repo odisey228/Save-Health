@@ -75,3 +75,58 @@ document.getElementById('btn_love_wishes').style.display = 'inline-block'
      if (galleryImage < 1) galleryImage = 4; // Якщо у вас 4 зображення
      mainImage.setAttribute('src', `img/gallery/${galleryImage}.jpg`);
  });
+ const arrayOfObjects = [
+{
+id:1,
+title:"Вітамін А",
+photo:"",
+description:"",
+rating:"",
+type:"",
+},
+{
+  id:2,
+  title:"Вітамін Б",
+  photo:"",
+  description:"",
+  rating:"",
+  type:"",
+  },
+  {
+    id:3,
+    title:"Вітамін С",
+    photo:"",
+    description:"",
+    rating:"",
+    type:"",
+    },
+    {
+      id:4,
+      title:"Омега-3",
+      photo:"",
+      description:"",
+      rating:"",
+      type:"",
+      },
+      {
+        id:5,
+        title:"Вітамін В3", 
+        photo:"",
+        description:"",
+        rating:"",
+        type:"",
+        },
+        
+ ]
+ console.log(arrayOfObjects)
+
+
+ arrayOfObjects.forEach((item) => {
+  console.log(item);
+
+  let divVitamin = document.createElement('div')
+  divVitamin.innerText = item.title
+  divVitamin.classList.add('vitamins') //L nht,f ,ekj p dtkbrf]
+  document.getElementById("p-vitamin").appendChild(divVitamin)
+  })
+ 
