@@ -126,7 +126,25 @@ type:"",
 
   let divVitamin = document.createElement('div')
   divVitamin.innerText = item.title
-  divVitamin.classList.add('vitamins') //L nht,f ,ekj p dtkbrf]
+  divVitamin.classList.add('vitamins') 
   document.getElementById("p-vitamin").appendChild(divVitamin)
   })
+ //console.log(arrayOfVitamins)
+ arrayOfVitamins.forEach((item,index)=>{
+ //console.log("елемент №",index,item)
+let divVitamin = document.createElement('div')
+//divVitamin.innerText = item.title
+divVitamin.classList.add('vitamin')
+
+document.getElementById("p-vitamins").appendChild(divVitamin)
+ })
+divVitamin.innerHTML=
  
+          `<h3>${item.title}</h3>
+          <hr>
+          <img src="img/vitamins/vitamin-a.png" alt="">
+          <p>${item.description}</p>
+          <span>${'💚'.repeat(item.rating)+'🤍'.repeat(5-item.rating)}</span>
+          <p>type<p>
+            <span>id</span>`
+        
