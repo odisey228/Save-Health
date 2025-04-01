@@ -2,11 +2,9 @@ body {
   padding: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  line-height:20px;
+  line-height: 18px;
   color: #000000;
-  background: #ffffff url("img/DALL·E\ 2025-03-04\ 13.11.16\ -\ A\ minimalistic\ medical-themed\ background.\ The\ image\ should\ feature\ a\ clean\,\ white\ and\ light\ blue\ gradient\ backdrop\ with\ subtle\ abstract\ medical\ icons.jpg.webp") no-repeat 50% 0;
-  background-size: cover;
- 
+  background: #ffffff 
 }
 
 h1 {
@@ -32,8 +30,18 @@ h2 {
   color: #999999;
 }
 
+.standard {
+  border-color: #ffc5b3;
+  color: #666666;
+}
+
+.vip {
+  border-color: #000000;
+  color: #000000;
+}
+
 .container {
-  width: 480px;
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -58,7 +66,7 @@ h2 {
 
 .feature-kitten {
   padding-top: 60px;
-  background-image: url("img/Antique_Valentine_1909_01.jpg");
+  background-image: url("img/bottle.svg");
 }
 
 .feature-cat {
@@ -76,118 +84,140 @@ h2 {
   list-style: none;
 }
 
-.site-footer {
-  display: flex;
-  justify-content: space-between;
-  color: #999999;
-}  
-
-/* Галерея */
-.galery{
-width: 100%;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-}
-#main-image{
-width: 300px;
-height: 200px;
-box-shadow: 10px 20px 10px rgba(0,0,0,0.5);
-
-
-}
-
-#left-arrow, #right-arrow{
-width: 70px;
-height: 70px;
-cursor: pointer;
-
-}
-
-.left-arrow:hover {
-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Тінь при наведенні */
-border-radius: 50%;
-}
-.right-arrow:hover {
-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Тінь при наведенні */
-border-radius: 50%;
-}
-.left-arrow:active {
-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-}
-.right-arrow:active {
-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-}
-
 .wishes{
-  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
 }
-#btn_love_wishes{
-  background: #b9b271;
-  color: #0f0c0c;
-  border: 5px solid #af4545;
+#btn_health_wishes{
+  background: #000000;
+  color: #ffffff;
+  border: 5px solid #ffffff;
   border-radius: 10px;
-  padding: 5px 20px;
+  padding: 10px 20px;
   font-size: 36px;
   cursor: pointer;
 }
-#love_wishes{
+
+#p-health-wishes{
+height: 150px;
+font-size: 28px;
+line-height: 40px;
+color: #000000;
+text-align: justify;
+}
+.site-footer p {
+ border: 1px solid #ffffff;
+ padding: 10px 20px;
+ border-radius: 10px 0px;
+background-color: #ffffff;
+cursor: pointer;
+}
+.site-footer p:last-child {
+cursor: auto;
+}
+.gallery{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  gap: 10px;
+  margin: 30px auto;
+}
+#main-image {
+  width: 200px;
   height: 150px;
-  font-size: 28px; 
-  line-height: 40px;
-  color: #111010;
-  text-align: justify;
-}
-
-.site-footer{
-  margin-top: 30px;
-  text-align: left;
-}
-
-#btn-buy-tablets{
-  background: #b9b271;
-  color: #0f0c0c;
-  border: 5px solid #af4545;
   border-radius: 10px;
-  padding: 5px 20px;
-  font-size: 20px;
+}
+#left-arrow, #right-arrow {
+  width: 25px;
+  height: 25px;
   cursor: pointer;
 }
-
-#count-of-tablets{
-  background: #b9b271;
-  color: #0f0c0c;
-  border: 5px solid #af4545;
-  border-radius: 10px;
-  padding: 5px 20px;
-  font-size: 20px;
+img {
+  box-shadow: 10px 10px 20px black
+}
+#left-arrow, #right-arrow {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
   cursor: pointer;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#left-arrow, #right-arrow:hover {
+  box-shadow: black;
+}
+#left-arrow, #right-arrow:active{
+  box-shadow: #999999;
 }
 
 /* Вітаміни */
-#p-vitamins{
- display: flex;
- flex-direction:row ;
- justify-content: space-around;
- flex-wrap: wrap;
-}
- .vitamins{
+.vitamins{
+  width: 100%;
   border: 1px solid #8b7b7b;
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-  width: 150px;
-  min-height: 200px;
+  
+  
   text-align: center;
 } 
 
-.vitamins h3{
+#p-vitamins{
+  
+ display: flex;
+ flex-direction:row ;
+ justify-content: space-around;
+ flex-wrap: wrap;
+}
+
+.vitamin{
+  width: 200px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+ 
+/* id */
+.vitamin p:first-child{
+    text-align: center;
+    font-size: 10px;
+    color: #8b7b7b;
+}
+
+.vitamin h3{
   font-size: 24px;
 }
-.vitamins img{
+.vitamin img{
   width: 100px;
   height: 100px;
+}
+/* description*/
+/* .vitamin p:nth-child(2){
+  font-size: 14px;
+  color: #8b7b7b;
+} */
+
+.vitamin p:last-child{
+  align-self: flex-end;
+  font-size: 14px;
+  color:#000000;
+}
+.vitamin div{
+  margin-top: auto;
+  width: 100%;
 }
