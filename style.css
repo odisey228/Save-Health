@@ -4,9 +4,8 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #000000;
-  background: #ffffff 
+  background-image:url(img/5366547776492562527.webp);
 }
-
 h1 {
   width: 260px;
   font-family: "Georgia", serif;
@@ -157,8 +156,69 @@ img {
 #left-arrow, #right-arrow:active{
   box-shadow: #999999;
 }
+#left-arrow {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #ff6b81;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
 
-/* Вітаміни */
+
+#left-arrow:hover {
+  background-color: #ff4757;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+
+#left-arrow:active {
+  transform: scale(0.95) translateY(2px); 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); 
+}
+#right-arrow {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #ff6b81;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+
+#right-arrow:hover {
+  background-color: #ff4757;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+
+#right-arrow:active {
+  transform: scale(0.95) translateY(2px); 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); 
+}
+#btn_love_wishes{
+  padding: 25px 80px;
+  font-size: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #ff4757; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+#btn-buy-tablets{ 
+  padding: 25px 50px;
+  font-size: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color:wheat; 
+
+}
+
 .vitamins{
   width: 100%;
   border: 1px solid #8b7b7b;
