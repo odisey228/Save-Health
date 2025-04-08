@@ -96,7 +96,7 @@ document.getElementById('btn_love_wishes').style.display = 'inline-block'
        </div>
      `;
 
-     document.getElementById('p-vitamin').appendChild(divVitamin);
+     document.getElementById('p-vitamins').appendChild(divVitamin);
    });
  });
 
